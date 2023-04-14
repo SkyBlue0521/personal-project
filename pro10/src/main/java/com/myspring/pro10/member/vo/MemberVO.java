@@ -1,5 +1,7 @@
 package com.myspring.pro10.member.vo;
 
+import java.sql.Date;
+
 import org.springframework.stereotype.Component;
 
 @Component("memberVO")
@@ -30,7 +32,7 @@ public class MemberVO {
 	private int adminCk;
 	
 	//등록일자
-	private int regDate;
+	private Date regDate;
 	
 	//회원 돈
 	private int money;
@@ -102,11 +104,11 @@ public class MemberVO {
 		this.adminCk = adminCk;
 	}
 
-	public int getRegDate() {
+	public Date getRegDate() {
 		return regDate;
 	}
 
-	public void setRegDate(int regDate) {
+	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
 

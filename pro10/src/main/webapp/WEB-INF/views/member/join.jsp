@@ -22,24 +22,12 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
- 
- <script>
 
-$(document).ready(function(){
-	//회원가입 버튼(회원가입 기능 작동)
-	$(".join_button").click(function(){
-		$("#join_form").attr("action", "${contexpPath}/member/join");
-		$("#join_form").submit();
-	});
-});
-
-</script>
- 
 </head>
 <body>
 
 <div class="wrapper">
-	<form action="${contextPath}/member/join" method="post">
+	<form action="join_form" method="post">
 	<div class="wrap">
 			<div class="subjecet">
 				<span>회원가입</span>
@@ -112,5 +100,17 @@ $(document).ready(function(){
 	</form>
 </div>
 
+<script>
+
+$(document).ready(function(){
+	//회원가입 버튼(회원가입 기능 작동)
+	$(".join_button").click(function(){
+		$("#join_form").attr("action", "${contexpPath}/member/join");
+		$("#join_form").submit();
+	});
+});
+
+</script>
+ 
 </body>
 </html>

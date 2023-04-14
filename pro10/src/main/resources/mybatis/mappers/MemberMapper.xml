@@ -5,8 +5,16 @@
   <mapper namespace="com.myspring.pro10.member">
   
   		<!-- 회원가입 -->
-  		<insert id="memberJoin">
-  			insert into t_book_member values(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0, sysdate, 100000, 5000 )
+  		<insert id="insertNewMember" parameterType="memberVO">
+  			insert into t_book_member 
+  			(memberId,
+  		 	 memberPw,
+  		 	 memberName,
+  		 	 memberMail,
+  		 	 memberAddr1,
+  		 	 memberAddr2,
+  		 	 memberAddr3,
+  			values(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0, sysdate, 100000, 5000 )
   		</insert>
 
   </mapper>
