@@ -6,136 +6,135 @@ import org.springframework.stereotype.Component;
 
 @Component("memberVO")
 public class MemberVO {
+    //회원 id
+    private String memberId;
 
-	//회원 id
-	private String memberId;
-	
-	//회원 비밀번호
-	private String memberPw;
-	
-	//회원 이름
-	private String memberName;
-	
-	//회원 이메일
-	private String memberMail;
-	
-	//회원 우편번호
-	private String memberAddr1;
-	
-	//회원 주소
-	private String memberAddr2;
-	
-	//회원 상세주소
-	private String memberAddr3;
-	
-	// 관리자 구분(0:일반사용자, 1:관리자)
-	private int adminCk;
-	
-	//등록일자
-	private Date regDate;
-	
-	//회원 돈
-	private int money;
-	
-	//회원 포인트
-	private int point;
+    //회원 비밀번호
+    private String memberPw;
 
-	public String getMemberId() {
-		return memberId;
-	}
+    //회원 이름
+    private String memberName;
 
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
-	}
+    //회원 이메일
+    private String memberMail;
 
-	public String getMemberPw() {
-		return memberPw;
-	}
+    //회원 우편번호
+    private String memberAddr1;
 
-	public void setMemberPw(String memberPw) {
-		this.memberPw = memberPw;
-	}
+    //회원 주소
+    private String memberAddr2;
 
-	public String getMemberName() {
-		return memberName;
-	}
+    //회원 상세주소
+    private String memberAddr3;
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
+    // 관리자 구분(0:일반사용자, 1:관리자)
+    private int adminCk;
 
-	public String getMemberMail() {
-		return memberMail;
-	}
+    //등록일자
+    private int regDate;
 
-	public void setMemberMail(String memberMail) {
-		this.memberMail = memberMail;
-	}
+    //회원 돈
+    private int money;
 
-	public String getMemberAddr1() {
-		return memberAddr1;
-	}
+    //회원 포인트
+    private int point;
 
-	public void setMemberAddr1(String memberAddr1) {
-		this.memberAddr1 = memberAddr1;
-	}
+    public String getMemberId() {
+        return memberId;
+    }
 
-	public String getMemberAddr2() {
-		return memberAddr2;
-	}
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
+    }
 
-	public void setMemberAddr2(String memberAddr2) {
-		this.memberAddr2 = memberAddr2;
-	}
+    public String getMemberPw() {
+        return memberPw;
+    }
 
-	public String getMemberAddr3() {
-		return memberAddr3;
-	}
+    public void setMemberPw(String memberPw) {
+        this.memberPw = memberPw;
+    }
 
-	public void setMemberAddr3(String memberAddr3) {
-		this.memberAddr3 = memberAddr3;
-	}
+    public String getMemberName() {
+        return memberName;
+    }
 
-	public int getAdminCk() {
-		return adminCk;
-	}
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
 
-	public void setAdminCk(int adminCk) {
-		this.adminCk = adminCk;
-	}
+    public String getMemberMail() {
+        return memberMail;
+    }
 
-	public Date getRegDate() {
-		return regDate;
-	}
+    public void setMemberMail(String memberMail) {
+        this.memberMail = memberMail;
+    }
 
-	public void setRegDate(Date regDate) {
-		this.regDate = regDate;
-	}
+    public String getMemberAddr1() {
+        return memberAddr1;
+    }
 
-	public int getMoney() {
-		return money;
-	}
+    public void setMemberAddr1(String memberAddr1) {
+        this.memberAddr1 = memberAddr1;
+    }
 
-	public void setMoney(int money) {
-		this.money = money;
-	}
+    public String getMemberAddr2() {
+        return memberAddr2;
+    }
 
-	public int getPoint() {
-		return point;
-	}
+    public void setMemberAddr2(String memberAddr2) {
+        this.memberAddr2 = memberAddr2;
+    }
 
-	public void setPoint(int point) {
-		this.point = point;
-	}
+    public String getMemberAddr3() {
+        return memberAddr3;
+    }
 
-	@Override
-	public String toString() {
-		return "MemberVO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
-				+ ", memberMail=" + memberMail + ", memberAddr1=" + memberAddr1 + ", memberAddr2=" + memberAddr2
-				+ ", memberAddr3=" + memberAddr3 + ", adminCk=" + adminCk + ", regDate=" + regDate + ", money=" + money
-				+ ", point=" + point + "]";
-	}
+    public void setMemberAddr3(String memberAddr3) {
+        this.memberAddr3 = memberAddr3;
+    }
 
-	
-	
+    public int getAdminCk() {
+        return adminCk;
+    }
+
+    public void setAdminCk(int adminCk) {
+        this.adminCk = adminCk;
+    }
+
+    public int getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(int regDate) {
+        this.regDate = regDate;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public int getPoint() {
+        return point;
+    }
+
+    public void setPoint(int point) {
+        this.point = point;
+    }
+
+    @Override
+    public String toString() {
+        return "MemberVO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName +
+            ", memberMail=" + memberMail + ", memberAddr1=" + memberAddr1 + ", memberAddr2=" + memberAddr2 +
+            ", memberAddr3=" + memberAddr3 + ", adminCk=" + adminCk + ", regDate=" + regDate + ", money=" + money +
+            ", point=" + point + "]";
+    }
+
+
+
 }

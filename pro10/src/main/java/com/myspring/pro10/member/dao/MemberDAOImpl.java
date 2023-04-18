@@ -13,10 +13,10 @@ import com.myspring.pro10.member.vo.MemberVO;
 public class MemberDAOImpl implements MemberDAO {
 	@Autowired
 	private SqlSession sqlSession;
-	
+		
 	@Override
 	public void  memberJoin(MemberVO memberVO) throws DataAccessException {
-		sqlSession.insert("mapper.MemberMapper.memberJoin",memberVO);
+		sqlSession.insert("mapper.member.memberJoin",memberVO);
 	}
 
 }

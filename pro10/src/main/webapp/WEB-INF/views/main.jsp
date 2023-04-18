@@ -31,8 +31,8 @@
 				</form> -->
 			</div>
 			<div class="login_area">
-				<div class="login_button"><a href="${contextPath}/member/login.do">로그인</a></div>
-				<span><a href="${contextPath}/member/join.do">회원가입</a></span>
+				<div class="login_button"><a href="${contextPath}/member/login">로그인</a></div>
+				<span><a href="${contextPath}/member/join">회원가입</a></span>
 			</div>
 			<div class="clearfix"></div>			
 		</div>

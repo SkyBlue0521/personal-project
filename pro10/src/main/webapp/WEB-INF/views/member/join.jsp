@@ -27,7 +27,7 @@
 <body>
 
 <div class="wrapper">
-	<form action="join_form" method="post">
+	<form id="join_form" method="post">
 	<div class="wrap">
 			<div class="subjecet">
 				<span>회원가입</span>
@@ -94,23 +94,23 @@
 				</div>
 			</div>
 			<div class="join_button_wrap">
-				<input type="button" class="join_button" value="가입하기">
+				<input type="submit" class="join_button" value="가입하기">
 			</div>
 		</div>
 	</form>
 </div>
 
-<script>
 
+<script>
 $(document).ready(function(){
 	//회원가입 버튼(회원가입 기능 작동)
 	$(".join_button").click(function(){
-		$("#join_form").attr("action", "${contexpPath}/member/join");
+		$("#join_form").attr("action", "${contextPath}/member/join");
 		$("#join_form").submit();
 	});
 });
 
 </script>
- 
+
 </body>
 </html>
